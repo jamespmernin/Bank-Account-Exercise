@@ -29,6 +29,10 @@ class BankAccount {
 /* Test code */
 testAccount = () => {
   const myAccount = new BankAccount;
+  // Try to withdraw from empty account
+  myAccount.withdraw(1);
+  myAccount.showBalance();
+  console.log(myAccount.transactionHistory);
   myAccount.deposit(100);
   myAccount.deposit(200);
   myAccount.showBalance();
